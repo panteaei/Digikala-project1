@@ -114,3 +114,11 @@
 .margin-left-10px {
   margin-left: 10px;
 }
+.login-blue-border{
+  border: 1px solid #19bfd3;
+  
+}
+.login-red-border{
+  border: 1px solid #D32F2F;
+
+}

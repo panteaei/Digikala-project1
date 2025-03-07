@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه اینترنتی دیجی‌‌‌‌‌‌‌ کالا</title>
+    <link rel="icon" href="./public/images/digifavicon.ico" />
+    <link rel="stylesheet" href="./public/css/desktop/loginPage.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-card">
+        <a href="./index.html" class="login-svg-wrapper">
+          <img
+            class="login-svg"
+            src="./public/images/login-page/digi-login.svg"
+            alt="digi kala"
+          />
+        </a>
+        <h1 class="login-title">ورود | ثبت‌نام</h1>
+        <p class="login-text login-p-1">سلام!</p>
+        <p class="login-text login-p-2">
+          لطفا شماره موبایل یا ایمیل خود را وارد کنید
+        </p>
+        <form class="login-form" action="#" method="get">
+          <input
+            class="login-input login-blue-border"
+            type="email"
+            name="loginTel"
+            id="loginTel"
+            autofocus
+          />
+          <p class="login-empty-error hidden">لطفا این قسمت را خالی نگذارید</p>
+          <button class="login-btn" type="submit">ورود</button>
+          <p class="login-p-3">
+            ورود شما به معنای پذیرش
+            <a class="login-link" href="#">شرایط دیجی‌کالا</a>
+            و
+            <a class="login-link" href="#">قوانین حریم‌خصوصی</a>
+            است
+          </p>
+        </form>
+      </div>
+    </div>
+    <!-- empty error in input -->
+    <script>
+      let loginInput = document.querySelector(".login-input");
+      let loginBtn = document.querySelector(".login-btn");
+      let emptyError = document.querySelector(".login-empty-error");
+      loginBtn.addEventListener("click", (e) => {
+        if (loginInput.value === "") {
+          emptyError.classList.remove("hidden");
+          loginInput.classList.remove("login-blue-border");
+          loginInput.classList.add("login-red-border");
+        }else {  
+          
+            emptyError.classList.add("hidden");  
+            loginInput.classList.remove("login-red-border");  
+            loginInput.classList.add("login-blue-border");  
+        }  
+      });
+
+    </script>
+  </body>
+</html>
