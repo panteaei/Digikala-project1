@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Dana";
+  src: url("/public/fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dana";
+  src: url("/public/fonts/Dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Dana";
+}
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 0 11px;
+}
+/* ایجاد سه نقطه */
+.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+/*discount percent*/
+.discount-percent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 36px;
+  width: 34px;
+  height: 20px;
+  padding-top: 2px;
+  border-radius: 103px;
+  background-color: #d72e4e;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+}
+/* discount  */
+.discount {
+  position: absolute;
+  left: 29px;
+  font-size: 11px;
+  color: rgb(186, 174, 174);
+  text-decoration: line-through;
+}
+/* hidden */
+.hidden {
+  display: none;
+}
+/* show block*/
+.showBlock{
+  display: block;
+}
+/* border radius top-left and bottom-left */
+.borderRaduis-left {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+/* border radius top-right and bottom-right */
+.borderRaduis-right {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* red bg */
+.redbg {
+  background-color: #d72e4e !important;
+}
+/* left border 1 */
+.left-border {
+  border-left: 1px solid #e0e0e2;
+}
+/* bottom border 1 */
+.bottom-border {
+  border-bottom: 1px solid #e0e0e2;
+}
+.bottom-border-2{
+  border-bottom: 1px solid #E0E0E2;
+}
+.right-border-2{
+  border-right: 1px solid #E0E0E2;
+}
+/* two lines  */
+/* vertical line عمودی */
+.vertical-line {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: #e7e9e9;
+  left: calc(50% - 0.5px);
+}
+/* horizontal line افقی */
+.horizontal-line {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #e7e9e9;
+  top: calc(50% - 0.5px);
+}
+.margin-left-10px {
+  margin-left: 10px;
+}
