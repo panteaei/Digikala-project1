@@ -132,7 +132,7 @@ header {
     display: flex;
     align-items: center;
     gap: 25px;
-    
+
     .navbar-firstli {
       font-weight: bold;
       color: #424750;
@@ -146,14 +146,15 @@ header {
     display: flex;
     align-items: center;
     gap: 2px;
-    &:nth-child(1)::after,&:nth-child(6)::after{
-content: "";
-width: 1px;
-height: 16px;
-background-color: #CCCECF;
-display: block;
-position: absolute;
-left: -13px;
+    &:nth-child(1)::after,
+    &:nth-child(6)::after {
+      content: "";
+      width: 1px;
+      height: 16px;
+      background-color: #cccecf;
+      display: block;
+      position: absolute;
+      left: -13px;
     }
 
     a {
@@ -1441,11 +1442,44 @@ left: -13px;
             height: 20px;
           }
         }
-        &:nth-last-child(-n + 6){
+        &:nth-last-child(-n + 6) {
           width: 16.66%;
         }
       }
-    
     }
+  }
+  .fixed-headphone {
+    position: fixed;
+    bottom: 32px;
+    right: 50px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ef4056;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+
+    .fixed-headphone-img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .fixed-supermarket {
+    position: fixed;
+    bottom: 32px;
+    left: 16px;
+    z-index: 9999;
+    width: fit-content;
+    padding: 10px 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #029a49;
+    border-radius: 29px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
   }
 }
