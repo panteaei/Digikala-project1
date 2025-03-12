@@ -122,3 +122,10 @@
   border: 1px solid #D32F2F;
 
 }
+.red-line{
+margin-left: 3px;
+height: 55%;
+width: 2px;
+background-color: #D32F2F;
+}
+

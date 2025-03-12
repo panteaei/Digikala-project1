@@ -1,0 +1,85 @@
+.mega-menu-products-wrapper {
+  .mega-menu-products {
+    direction: ltr;
+    overflow-y: scroll;
+    width: auto;
+    height: 100%;
+    background-color: white;
+
+    .mega-menu-products-title {
+      padding-right: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-bottom: 30px;
+      margin-top: 20px;
+
+      .mega-menu-products-span {
+        color: rgb(93, 174, 192);
+        font-size: 13px;
+        font-weight: bold;
+      }
+    }
+    .mega-menu-products-everything {
+      padding: 0 13px;
+      display: flex;
+
+      direction: rtl;
+      .mega-menu-each-product-wrapper {
+        width: 218.5px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .mega-menu-each-product {
+          display: flex;
+          flex-direction: column;
+          height: fit-content;
+          gap: 12px;
+          width: 100%;
+          background-color: white;
+          .mega-menu-each-product-title {
+            display: flex;
+            align-items: center;
+            height: 20px;
+            color: black;
+            font-size: 14px;
+            .product-title-svg {
+              color: gray;
+              width: 17px;
+              height: 17px;
+            }
+            &:hover {
+              color: crimson;
+              .product-title-svg {
+                color: crimson;
+              }
+            }
+          }
+          .mega-menu-each-product-list {
+            .mega-menu-each-product-items {
+              padding: 7px 0;
+              font-size: 10px;
+              font-weight: normal;
+              color: rgb(164, 161, 161);
+              a {
+                color: #62666d;
+                &:hover {
+                  color: crimson;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.transparent-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}

@@ -1,21 +1,28 @@
 @import url(./setting.css);
 @import url(./swiiper.css);
+@import url(./mega-menu-products.css);
 header {
   width: 100%;
   background-color: white;
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9999;
 }
 .top-image {
   width: 100%;
-  margin-bottom: 7px;
+  height: 60px;
+  margin-bottom: 12px;
 
-  img {
-    width: 100%;
+  a {
+    outline: none;
+    display: inline-block;
     height: 60px;
-    object-fit: cover;
+    img {
+      width: 100%;
+      height: 60px;
+      object-fit: cover;
+    }
   }
 }
 .search-and-login {
@@ -113,12 +120,11 @@ header {
   align-items: baseline;
   border-bottom: #d0d0d0 solid 1px;
   padding: 0 14px;
-  padding-bottom: 2px;
 }
 /* navbar */
 .navbar {
   padding-left: 10px;
-  padding-bottom: 8px;
+
   margin-top: 17px;
 
   .hamb {
@@ -129,40 +135,118 @@ header {
     width: 18px;
   }
   .menu {
+    height: 33px;
     display: flex;
     align-items: center;
     gap: 25px;
-
-    .navbar-firstli {
-      font-weight: bold;
-      color: #424750;
-    }
-  }
-  /* دسته بندی کالا  */
-  li {
-    position: relative;
-    cursor: pointer;
-    font-size: medium;
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    &:nth-child(1)::after,
-    &:nth-child(6)::after {
-      content: "";
-      width: 1px;
-      height: 16px;
-      background-color: #cccecf;
-      display: block;
-      position: absolute;
-      left: -13px;
-    }
-
-    a {
-      font-size: 14px;
+    .menu-items {
+      padding-bottom: 8px;
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+      font-size: medium;
       display: flex;
       align-items: center;
       gap: 2px;
-      color: #82868c;
+
+      &:nth-child(1)::after,
+      &:nth-child(6)::after {
+        content: "";
+        width: 1px;
+        height: 16px;
+        background-color: #cccecf;
+        display: block;
+        position: absolute;
+        left: -13px;
+      }
+
+      a {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+      }
+      .menu-items-other-links {
+        color: #62666d;
+      }
+    }
+    /* دسته بندی کالا  */
+    .navbar-firstli {
+      font-weight: bold;
+      color: #424750;
+      position: relative;
+
+      .mega-menu-wrapper {
+        display: none;
+        position: absolute;
+        top: 32px;
+        width: fit-content;
+        height: 65vh;
+        background-color: white;
+        cursor: default;
+        border-bottom-left-radius: 9px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+          rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+        .mega-menu {
+          width: inherit;
+          height: inherit;
+          display: flex;
+          .mega-menu-titles {
+            direction: ltr;
+            width: 198px;
+            height: 100%;
+            background-color: #ffffff;
+            overflow-y: scroll;
+
+            .mega-menu-list {
+              display: flex;
+              flex-direction: column;
+              height: inherit;
+
+              .mega-menu-items {
+                position: relative;
+                width: 100%;
+                background-color: #f0f0f1;
+
+                .mega-menu-links {
+                  width: 100%;
+                  padding: 15px 10px;
+                  display: flex;
+                  justify-content: flex-end;
+                  gap: 4px;
+                  color: #282938;
+                  font-size: 12px;
+                  svg{
+                    width: 18px;
+                    height: 18px;
+                    color: #282938;
+                 
+                  }
+
+                  &:hover {
+                    background-color: white;
+                    color: #ed1944;
+                    svg{
+                    
+                        color: #ed1944;
+                      
+                    }
+                  }
+            
+                }
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        .mega-menu-wrapper {
+          display: block;
+          transition-delay: 3000ms;
+        }
+      }
     }
   }
 }
@@ -1448,12 +1532,12 @@ header {
       }
     }
   }
- 
+
   .fixed-headphone {
     position: fixed;
     bottom: 32px;
     right: 50px;
-    z-index: 9999;
+    z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1471,7 +1555,7 @@ header {
     position: fixed;
     bottom: 32px;
     left: 16px;
-    z-index: 9999;
+    z-index: 99;
     width: fit-content;
     padding: 10px 12px;
     font-size: 18px;
