@@ -338,7 +338,7 @@ header {
   border-radius: 100%;
   background-color: #ffffff;
   border: #f6efef solid 1px;
-  z-index: 100;
+  z-index: 98;
   cursor: pointer;
 }
 .myswiper-button-next {
@@ -394,7 +394,7 @@ header {
         border-radius: 100%;
         background-color: #ffffff;
         border: #f6efef solid 1px;
-        z-index: 100;
+        z-index: 98;
         cursor: pointer;
       }
     }
@@ -481,7 +481,7 @@ header {
       border-radius: 100%;
       background-color: #ffffff;
       border: #f6efef solid 1px;
-      z-index: 100;
+      z-index: 98;
       cursor: pointer;
     }
     .myswiper3-button-next {
@@ -833,7 +833,7 @@ header {
         border-radius: 100%;
         background-color: #ffffff;
         border: #e0d7d7 solid 1px;
-        z-index: 100;
+        z-index: 98;
         cursor: pointer;
       }
       .myswiper4-button-prev {
@@ -989,7 +989,7 @@ header {
         border-radius: 100%;
         background-color: #ffffff;
         border: #e0d7d7 solid 1px;
-        z-index: 100;
+        z-index: 98;
         cursor: pointer;
       }
       .myswiper5-button-prev {
