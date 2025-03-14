@@ -317,7 +317,7 @@ header {
   span {
     width: 74px;
     height: 45px;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 26px;
     text-wrap: wrap;
   }
@@ -511,7 +511,8 @@ header {
       h3 {
         text-align: start;
         height: 40px;
-        font-size: 13px;
+        font-family: serif;
+        font-size: 17px;
         font-weight: 100;
         color: #82868c;
         margin-bottom: 11px;
